@@ -1,1 +1,2 @@
 # BlockchainPython
+Simple blockchain project 
