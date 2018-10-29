@@ -1,4 +1,6 @@
+
 import hashlib as hasher
+
 
 
 class Block:
@@ -16,8 +18,8 @@ class Block:
 
     def hash_block(self):
         sha = hasher.sha256()
-        sha.update(str(self.index) +
-                   str(self.timestamp) +
-                   str(self.data) +
-                   str(self.previous_hash))
+        sha.update(str(self.index).encode() +
+                   str(self.timestamp).encode() +
+                   str(self.data).encode() +
+                   str(self.previous_hash).encode())
         return sha.hexdigest()

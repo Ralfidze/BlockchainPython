@@ -1,3 +1,4 @@
+
 from genesis import create_genesis_block
 from genesis import next_block
 
@@ -13,8 +14,8 @@ for i in range(0, num_of_blocks_to_add):
 
     previous_block = block_to_add
 
-    print "Block #{} has been added to the blockchain!".format(block_to_add.index)
+    print ("Block #{} has been added to the blockchain!".format(block_to_add.index))
 
-    print "Hash: {}".format(block_to_add.hash)
+    print ("Hash: {}".format(block_to_add.hash))
 
-    print "Data: {}\n".format(block_to_add.data)
+    print ("Data: {}\n".format(block_to_add.data))
